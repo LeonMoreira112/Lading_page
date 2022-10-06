@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  background-color: grey;
+  height: 250px;
+  padding: 2%;
+}
+.header h2 {
+  margin-top: 1%;
+  font-size: 1.2em;
+}
+.header h1 {
+  margin-bottom: 1.3%;
+}
+.header h3 {
+  font-size: 0.8em;
+}
+.header .btn {
+  border: none;
+  background-color: white;
+  margin: 2.5% 1.3%;
+  padding: 0.5%;
+  width: 12%;
+  cursor: pointer;
+}
+
+.ajude {
+  display: flex;
+  margin: 7% auto;
+  width: 1000px;
+}
+.ajude .ajude_content {
+  width: 60%;
+  margin-right: 10%;
+}
+.ajude .ajude_content p {
+  display: block;
+  margin: 4% 0;
+}
+.ajude .ajude_form {
+  width: 40%;
+}
+.ajude .ajude_form div {
+  margin-bottom: 4%;
+}
+.ajude .ajude_form .div input {
+  display: block;
+  width: 80%;
+  padding: 0.5%;
+}
+.ajude .ajude_form .checkbox {
+  display: flex;
+}
+.ajude .ajude_form .checkbox :nth-child(3) {
+  margin-left: 7%;
+}
+.ajude .ajude_form button {
+  border: 1px solid black;
+  background-color: white;
+  padding: 2%;
+  width: 80%;
+  cursor: pointer;
+}
+
+.produtos {
+  width: 1000px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 7%;
+}
+.produtos h4 {
+  text-align: center;
+  margin-bottom: 4%;
+}
+.produtos h4:before,
+.produtos h4:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.produtos h4:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.produtos h4:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+.produtos .products {
+  margin-bottom: 5%;
+}
+.produtos .products span {
+  display: block;
+  font-size: 0.8em;
+  margin: 3% 0;
+  width: 80%;
+}
+.produtos .products .desconto {
+  font-weight: bold;
+}
+.produtos .products button {
+  border: 1px solid black;
+  background-color: white;
+  padding: 2%;
+  width: 80%;
+  cursor: pointer;
+}
+.produtos .products .borda_produto {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+}
+.produtos .top_products, .produtos .bottom_products {
+  display: flex;
+}
+.produtos .more_products {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: white;
+  padding: 0.5%;
+  width: 30%;
+  cursor: pointer;
+}
+
+.compartilhe {
+  margin: 0 auto;
+  width: 1000px;
+  text-align: center;
+}
+.compartilhe h4 {
+  text-align: center;
+  margin-bottom: 4%;
+}
+.compartilhe h4:before,
+.compartilhe h4:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.compartilhe h4:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.compartilhe h4:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+.compartilhe .compartilhe_form {
+  margin-top: 4%;
+}
+.compartilhe .compartilhe_form .inputs {
+  display: flex;
+  justify-content: space-around;
+}
+.compartilhe .compartilhe_form .inputs span {
+  text-align: left;
+  display: block;
+}
+.compartilhe .compartilhe_form .inputs input {
+  width: 180%;
+  padding: 0.5%;
+}
+.compartilhe .compartilhe_form button {
+  margin-top: 4%;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: white;
+  padding: 0.3%;
+  width: 30%;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 5%;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+  height: 150px;
+  padding: 2%;
+}
+.footer span {
+  display: block;
+}/*# sourceMappingURL=style.css.map */
