@@ -12,14 +12,10 @@ const email_input = document.querySelector('.email_input')
 const btn_envio2 = document.querySelector('.btn_envio2')
 const msg2 = document.querySelector('.msg2')
 
+
 function confirmarEnvio(){
     form.classList.add('hidden')
     msg.classList.remove('hidden')
-}
-
-function confirmarEnvio2(){
-  compartilhe_form.classList.add('hidden')
-  msg2.classList.remove('hidden')
 }
 
 
@@ -80,9 +76,10 @@ function fetchApiData() {
   }
 fetchApiData()
 
-btn_more.addEventListener('click', () => {
-  let baseURL = data.nextPage
-})
+function confirmarEnvio2(){
+  compartilhe_form.classList.add('hidden')
+  msg2.classList.remove('hidden')
+}
 
 compartilhe_form.addEventListener('submit', (e) => {
   
