@@ -56,14 +56,12 @@ form.addEventListener('submit', (e) => {
 
 let baseURL= "https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1";
 
-btn_more.addEventListener('click', () => {
-  let baseURL = data.nextPage
-})
 
 function fetchApiData() {
     fetch(baseURL).then((response) =>
-      response.json().then((data) =>
-        data.products.map((product) => {
+      response.json().then((data) => 
+        data.products.map((product) => { 
+          console.log(data.nextPage)
           products.innerHTML += `
           
             <div class="products">
@@ -81,6 +79,10 @@ function fetchApiData() {
     )
   }
 fetchApiData()
+
+btn_more.addEventListener('click', () => {
+  let baseURL = data.nextPage
+})
 
 compartilhe_form.addEventListener('submit', (e) => {
   
