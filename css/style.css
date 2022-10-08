@@ -8,6 +8,19 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
 .header {
   color: white;
   text-align: center;
@@ -101,7 +114,12 @@ body {
   left: 0.5em;
   margin-right: -50%;
 }
+.produtos #products {
+  display: flex;
+  flex-wrap: wrap;
+}
 .produtos .products {
+  width: 25%;
   margin-bottom: 5%;
 }
 .produtos .products span {
@@ -121,12 +139,12 @@ body {
   cursor: pointer;
 }
 .produtos .products .borda_produto {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border: 1px solid black;
 }
-.produtos .top_products, .produtos .bottom_products {
-  display: flex;
+.produtos .products .borda_produto img {
+  width: 100%;
 }
 .produtos .more_products {
   display: flex;
@@ -134,7 +152,7 @@ body {
   justify-content: center;
   border: 1px solid black;
   background-color: white;
-  padding: 0.5%;
+  padding: 0.8%;
   width: 30%;
   cursor: pointer;
 }
@@ -165,6 +183,10 @@ body {
 .compartilhe h4:after {
   left: 0.5em;
   margin-right: -50%;
+}
+.compartilhe .share_friends {
+  display: block;
+  margin-bottom: 5%;
 }
 .compartilhe .compartilhe_form {
   margin-top: 4%;
