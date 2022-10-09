@@ -50,14 +50,13 @@ form.addEventListener('submit', (e) => {
     }
 })
 
-let baseURL= "https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1";
+const baseURL= "https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1";
 
 
-function fetchApiData() {
+function fetchApiData(baseURL) {
     fetch(baseURL).then((response) =>
       response.json().then((data) => 
         data.products.map((product) => { 
-          console.log(data.nextPage)
           products.innerHTML += `
           
             <div class="products">
@@ -74,7 +73,11 @@ function fetchApiData() {
       )
     )
   }
-fetchApiData()
+fetchApiData(baseURL)
+
+function newURL(){
+  fetchApiData("https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=2")
+}
 
 function confirmarEnvio2(){
   compartilhe_form.classList.add('hidden')
