@@ -1,7 +1,7 @@
 # lading_page
 
 <h2> Objetivo: <h2>
-  <p style="font-size:200em"> Desafio passado no curso de desenvolvimento web fullstack Thiago Medeiros</p>
+  <p> Desafio passado no curso de desenvolvimento web fullstack Thiago Medeiros</p>
 
 <h2> Dificuladedes encontradas: <h2>
   <p> Tive muita dificuldade em construir o html da página a partir do javascript, mas com ajuda do monitor do curso, eu superei essa dificuldade e consegui finalizar o projeto. </p>
