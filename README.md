@@ -1,4 +1,4 @@
-# lading_page
+<h1 align="center"> Lading Page </h1>
 
 <h2> Objetivo: <h2>
   <p> Desafio passado no curso de desenvolvimento web fullstack Thiago Medeiros</p>
