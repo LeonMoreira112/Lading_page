@@ -57,6 +57,7 @@ function fetchApiData(baseURL) {
     fetch(baseURL).then((response) =>
       response.json().then((data) => 
         data.products.map((product) => { 
+          console.log(data)
           products.innerHTML += `
           
             <div class="products">

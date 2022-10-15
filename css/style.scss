@@ -48,7 +48,7 @@ input:focus {
 .ajude{
     display: flex;
     margin: 7% auto;
-    width: 1000px;
+    width: 70%;
 
     .ajude_content {
         width: 60%;
@@ -87,7 +87,7 @@ input:focus {
     }
 }
 .produtos {
-    width: 1000px;
+    width: 70%;
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 7%;
@@ -137,8 +137,7 @@ input:focus {
             cursor: pointer;
         }
         .borda_produto {
-            width: 200px;
-            height: 200px;
+            width: 80%;
             border: 1px solid black;
             
 
@@ -162,7 +161,7 @@ input:focus {
 
 .compartilhe{
     margin: 0 auto;
-    width: 1000px;
+    width: 70%;
     text-align: center;
     h4{
         text-align: center;
