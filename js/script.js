@@ -53,6 +53,7 @@ form.addEventListener('submit', (e) => {
 const baseURL= "https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1";
 
 
+
 function fetchApiData(baseURL) {
     fetch(baseURL).then((response) =>
       response.json().then((data) => 
@@ -76,8 +77,18 @@ function fetchApiData(baseURL) {
   }
 fetchApiData(baseURL)
 
+/*  
+    I set this variable, so that whenever I render my newURL function for sending me the data for the next page
+    In the url I should specific number of page I want 
+    And because I don't have an input to set the number, I just want to whenver I click on the button get more data 
+    So the good thing is to set variable that increment each time I click on the function, which represent the number of pages
+*/
+let numberOfPages = 1;
 function newURL(){
-  fetchApiData("https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=2")
+  // numberOfPages = numberOfPages + 1    // it's the same thing 
+  numberOfPages += 1;
+  // here I used template literals 
+  fetchApiData(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${numberOfPages}`);
 }
 
 function confirmarEnvio2(){
@@ -108,3 +119,10 @@ compartilhe_form.addEventListener('submit', (e) => {
     btn_envio2.addEventListener('click', (confirmarEnvio2()))
   }
 })
+
+
+// 1 - Try to use semicolons, it's really a good practice, it does'nt effect 
+// 2 - Try to use comments as much as you can
+// 3 - Would be a great idea if you used OOP, if not it's tottaly fine
+// 4 - And finally, I just want to say, that you really did a great job, your code is really fancy, good luck and keep going 
+// Zouhair Sahtout 20:05
